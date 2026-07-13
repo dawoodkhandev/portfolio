@@ -2,7 +2,7 @@
 
 My personal portfolio site. Built with Next.js and deployed on Vercel.
 
-**Live:** https://dawoodkhandev.vercel.app
+### → [dawoodkhandev.vercel.app](https://dawoodkhandev.vercel.app)
 
 ## Stack
 
@@ -43,6 +43,8 @@ touching the components.
 - The cursor glow is skipped on touch devices.
 
 ## Running locally
+
+For development only. The deployed site is the link above.
 
 ```bash
 npm install
