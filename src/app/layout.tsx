@@ -16,15 +16,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const description =
+  "Incoming Computer Science student at the University of Waterloo. I build full-stack AI products end-to-end.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(profile.siteUrl),
   title: `${profile.name} — ${profile.role}`,
-  description:
-    "Incoming Computer Science student at the University of Waterloo. I build full-stack AI products end-to-end.",
+  description,
   openGraph: {
     title: `${profile.name} — ${profile.role}`,
-    description:
-      "Incoming Computer Science student at the University of Waterloo. I build full-stack AI products end-to-end.",
+    description,
+    url: profile.siteUrl,
+    siteName: profile.name,
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${profile.name} — ${profile.role}`,
+    description,
   },
 };
 
