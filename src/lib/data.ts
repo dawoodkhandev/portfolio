@@ -3,7 +3,7 @@
 export const profile = {
   name: "Dawood Khan",
   role: "Full-Stack & AI Developer",
-  siteUrl: "https://dawoodkhan-seven.vercel.app",
+  siteUrl: "https://dawoodkhandev.vercel.app",
   /** Split so the last clause can be accented. */
   tagline: {
     lead: "I turn ideas into full-stack AI products that people ",
