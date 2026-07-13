@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+My personal portfolio site. Built with Next.js and deployed on Vercel.
 
-First, run the development server:
+**Live:** _(link added once deployed)_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+- Next.js 16 (App Router) with React 19
+- TypeScript
+- Tailwind CSS v4
+- simple-icons for the technology logos in the skills section
+
+## Structure
+
+```
+src/
+  app/
+    layout.tsx          root layout, fonts, metadata, shared background
+    page.tsx            homepage, composes the sections
+    globals.css         theme tokens and animations
+    icon.svg            favicon
+    projects/[slug]/    one prerendered page per project
+  components/
+    Navbar.tsx          floating nav with scroll spy
+    Starfield.tsx       background stars
+    CursorGlow.tsx      glow that follows the cursor
+    Reveal.tsx          fade-in-on-scroll wrapper
+    ProjectGallery.tsx  screenshot carousel
+    sections/           hero, about, projects, skills, experience, education, contact
+  lib/
+    data.ts             all site content
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Content lives in `src/lib/data.ts`, so text and projects can be updated without
+touching the components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Every page is statically prerendered at build time, including the project pages.
+- The starfield uses a seeded random number generator so the server and client
+  produce identical markup and React doesn't report a hydration mismatch.
+- The cursor glow is skipped on touch devices.
 
-## Learn More
+## Running locally
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then open http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build    # production build
+npm run lint     # eslint
+```
