@@ -2,7 +2,7 @@
 
 export const profile = {
   name: "Dawood Khan",
-  role: "Full-Stack & AI Developer",
+  role: "Software Developer",
   siteUrl: "https://dawoodkhandev.vercel.app",
   /** Split so the last clause can be accented. */
   tagline: {
