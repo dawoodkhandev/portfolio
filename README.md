@@ -2,7 +2,7 @@
 
 My personal portfolio site. Built with Next.js and deployed on Vercel.
 
-**Live:** https://dawoodkhan.vercel.app
+**Live:** https://dawoodkhan-seven.vercel.app
 
 ## Stack
 
