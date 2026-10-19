@@ -240,7 +240,7 @@ export const experience = [
     company: "University of Waterloo",
     companyUrl: "https://github.com/castorini/rank_llm" as string | undefined,
     location: "Waterloo, ON · Remote",
-    period: "Aug 2026 – Present",
+    period: "Aug 2026 – Oct 2026",
     bullets: [
       "Research assistant in Prof. Jimmy Lin's group (castorini), contributing to rank_llm, a widely-used open-source information retrieval toolkit (1M+ downloads).",
       "Merged PRs improving the reranking onboarding pipeline, and diagnosed and fixed a multi-layer GPU/Colab environment failure (CUDA/vLLM version mismatch, dependency pinning, JDK config) that blocked setup for all new users.",
