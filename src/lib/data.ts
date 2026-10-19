@@ -236,6 +236,31 @@ export const skillGroups: { title: string; items: Skill[] }[] = [
 /** Work experience — rendered as a vertical timeline. */
 export const experience = [
   {
+    role: "Research Assistant",
+    company: "University of Waterloo",
+    companyUrl: "https://github.com/castorini/rank_llm" as string | undefined,
+    location: "Waterloo, ON · Remote",
+    period: "Aug 2026 – Present",
+    bullets: [
+      "Research assistant in Prof. Jimmy Lin's group (castorini), contributing to rank_llm, a widely-used open-source information retrieval toolkit (1M+ downloads).",
+      "Merged PRs improving the reranking onboarding pipeline, and diagnosed and fixed a multi-layer GPU/Colab environment failure (CUDA/vLLM version mismatch, dependency pinning, JDK config) that blocked setup for all new users.",
+      "Authored step-by-step onboarding documentation integrating the GPU reranking workflow into the RankZephyr and FirstMistral lessons.",
+    ],
+    tags: ["Python", "Information Retrieval", "CUDA / vLLM", "Open Source"],
+  },
+  {
+    role: "Software Engineering Intern",
+    company: "Osynth",
+    companyUrl: "https://osynth.ai" as string | undefined,
+    location: "Remote · San Francisco, CA",
+    period: "Aug 2026 – Oct 2026",
+    bullets: [
+      "Worked directly with the founder of Osynth, an a16z Speedrun-backed AI startup building an AI growth engine for creator-led marketing.",
+      "Designed and built a full redesign of the marketing site front end in React / TypeScript — a dark, editorial UI with an animated canvas starfield hero and interactive cursor-driven lighting.",
+    ],
+    tags: ["React", "TypeScript", "Next.js", "UI/UX"],
+  },
+  {
     role: "Software Developer & Marketing Technologist",
     company: "Maira Khan International",
     companyUrl: undefined as string | undefined,
